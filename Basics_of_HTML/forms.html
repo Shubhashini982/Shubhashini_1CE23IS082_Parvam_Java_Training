@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Forms with Text and Email Input</h2>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <input type="submit" value="Submit" />
+    </form>
+    <form>
+        <h2>Select Gender</h2>
+        <form action="/submit" method="POST">
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male"><br>
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </form>
+    <form>
+        <h2>Terms and Condition</h2>
+        <form action="/submit" method="POST">
+            <label>
+                <input type="checkbox" name="terms" required /> I agree to the terms and conditions
+            </label><br /><br />
+            <input type="submit" value="Submit">
+    </form>
+    <form>
+        <h2>Select a Country</h2>
+        <form action="/submit" method="POST">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="india">INDIA</option>
+                <option value="uk">UK</option>
+            </select><br /><br />
+            <input type="submit" value="Submit">
+    </form>
+    <form>
+        <h2>Login Form</h2>
+        <form action="/submit" method="POST"></form>
+         <label for="username">Username</label>
+         <input type="text" id="username" name="username" /><br /><br />
+
+         <label for="password">Password</label>
+         <input type="password" id="password" name="password" /><br /><br />
+
+         <input type="submit" value="Login">
+
+    </form>
+</body>
+</html>
